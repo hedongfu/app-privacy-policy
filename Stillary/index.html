@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stillary Play Store Release Bundle</title>
+    <style>
+        :root {
+            --paper: #faf8f2;
+            --paper-deep: #f1ebdf;
+            --ink: #151515;
+            --muted: #5e625a;
+            --blue: #94b4d1;
+            --amber: #efc65f;
+            --green: #50724f;
+            --line: rgba(21, 21, 21, 0.08);
+            --shadow: 0 18px 40px rgba(21, 21, 21, 0.08);
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top left, rgba(148, 180, 209, 0.3), transparent 30%),
+                linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+        }
+
+        main {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 48px 24px 72px;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: clamp(36px, 5vw, 58px);
+            line-height: 0.96;
+            letter-spacing: 0.04em;
+        }
+
+        p.lead {
+            max-width: 760px;
+            margin: 0 0 32px;
+            color: var(--muted);
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .panel,
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(14px);
+            border: 1px solid var(--line);
+            border-radius: 28px;
+            box-shadow: var(--shadow);
+        }
+
+        .panel {
+            padding: 28px;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-bottom: 16px;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(80, 114, 79, 0.12);
+            color: var(--green);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .meta {
+            display: grid;
+            gap: 12px;
+        }
+
+        .meta-row {
+            padding: 14px 16px;
+            border-radius: 18px;
+            background: rgba(250, 248, 242, 0.9);
+            border: 1px solid var(--line);
+        }
+
+        .meta-row strong {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 13px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+            margin-top: 24px;
+        }
+
+        .card {
+            padding: 22px;
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 22px;
+        }
+
+        .card p {
+            margin: 0 0 14px;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        a {
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .swatches {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-top: 18px;
+        }
+
+        .swatch {
+            width: 42px;
+            height: 42px;
+            border-radius: 999px;
+            border: 1px solid rgba(21, 21, 21, 0.08);
+        }
+
+        .footer-note {
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 780px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <div class="panel">
+                <div class="badge">Release Bundle</div>
+                <h1>Stillary<br>Play Store Assets</h1>
+                <p class="lead">This folder contains the remaining non-screenshot deliverables for the first Play Store submission: public compliance pages, store listing copy, and the finished feature graphic.</p>
+                <div class="swatches">
+                    <div class="swatch" style="background:#94b4d1"></div>
+                    <div class="swatch" style="background:#efc65f"></div>
+                    <div class="swatch" style="background:#50724f"></div>
+                </div>
+            </div>
+            <div class="panel meta">
+                <div class="meta-row">
+                    <strong>Privacy Policy URL</strong>
+                    <a href="https://hedongfu.github.io/Stillary/privacy-policy.html">https://hedongfu.github.io/Stillary/privacy-policy.html</a>
+                </div>
+                <div class="meta-row">
+                    <strong>Data Safety Reference</strong>
+                    <a href="https://hedongfu.github.io/Stillary/data-safety.html">https://hedongfu.github.io/Stillary/data-safety.html</a>
+                </div>
+                <div class="meta-row">
+                    <strong>Support Email</strong>
+                    <a href="mailto:ringtone.sky@gmail.com">ringtone.sky@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <h2>Privacy Policy</h2>
+                <p>Authoritative public-facing policy for Play Console. It reflects the current app behavior: photo content stays on device, while Firebase analytics and crash diagnostics are used for telemetry.</p>
+                <a href="privacy-policy.html">Open privacy-policy.html</a>
+            </article>
+            <article class="card">
+                <h2>Data Safety</h2>
+                <p>Exact reference sheet for Play Console answers, including the current Firebase Analytics and Crashlytics footprint and the categories that remain local-only.</p>
+                <a href="data-safety.html">Open data-safety.html</a>
+            </article>
+            <article class="card">
+                <h2>Store Listing Copy</h2>
+                <p>App name, short description, full description, support email, privacy URL, and suggested screenshot captions prepared for manual paste into Play Console.</p>
+                <a href="store-listing-copy.md">Open store-listing-copy.md</a>
+            </article>
+            <article class="card">
+                <h2>Feature Graphic</h2>
+                <p>Finished 1024 x 500 asset and editable source file. The composition stays close to Stillary's quiet memo identity instead of using a screenshot collage.</p>
+                <a href="../branding/stillary-feature-graphic-source.svg">Open source SVG</a>
+            </article>
+        </section>
+
+        <p class="footer-note">To make the public URLs live, enable GitHub Pages for the repository and set the publishing source to the <strong>main</strong> branch and the <strong>/docs</strong> folder.</p>
+    </main>
+</body>
+</html>
