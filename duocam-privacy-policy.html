@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DuoCam Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for DuoCam Android app.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5fbfb;
+      --paper: #ffffff;
+      --ink: #16252b;
+      --muted: #5b7077;
+      --line: #d6e6e8;
+      --teal: #008b86;
+      --teal-soft: #e3f7f5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 32px auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 40px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+    }
+
+    .brand {
+      align-items: center;
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      align-items: center;
+      background: var(--teal);
+      border-radius: 12px;
+      display: inline-flex;
+      height: 52px;
+      justify-content: center;
+      position: relative;
+      width: 76px;
+    }
+
+    .lens {
+      background: #ffffff;
+      border-radius: 50%;
+      height: 28px;
+      position: relative;
+      width: 28px;
+    }
+
+    .lens + .lens {
+      margin-left: -4px;
+    }
+
+    .lens::after {
+      background: #17252b;
+      border-radius: 50%;
+      content: "";
+      height: 12px;
+      left: 8px;
+      position: absolute;
+      top: 8px;
+      width: 12px;
+    }
+
+    h1 {
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 0 0 8px;
+    }
+
+    h2 {
+      border-top: 1px solid var(--line);
+      font-size: 24px;
+      line-height: 1.3;
+      margin: 32px 0 12px;
+      padding-top: 24px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 16px 22px;
+      padding: 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 16px 0 22px;
+      width: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--teal-soft);
+    }
+
+    code,
+    pre {
+      font-family: Consolas, Monaco, monospace;
+    }
+
+    pre {
+      background: #f0f6f7;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow-x: auto;
+      padding: 12px;
+    }
+
+    a {
+      color: var(--teal);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      main {
+        margin: 0;
+        min-height: 100vh;
+        padding: 24px 18px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      table {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand" aria-label="DuoCam">
+        <div class="logo" aria-hidden="true">
+          <span class="lens"></span>
+          <span class="lens"></span>
+        </div>
+        <strong>DuoCam</strong>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="muted">Effective date: June 9, 2026</p>
+      <p>This Privacy Policy applies to the Android app DuoCam, package name <code>com.herman.duomark</code>.</p>
+    </header>
+
+    <section>
+      <h2>1. What DuoCam does</h2>
+      <p>DuoCam is a camera app for recording and exporting video on your Android device.</p>
+      <p>Current features include:</p>
+      <ul>
+        <li>Dual Format mode: record one source video and export synced portrait 9:16 and landscape 16:9 MP4 files.</li>
+        <li>Dual Camera mode: on supported devices, record front and rear cameras at the same time and save separate MP4 files.</li>
+        <li>On-device exports such as picture-in-picture or split-screen videos from front/rear recordings.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Permissions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Purpose</th>
+            <th>Required</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Camera</td>
+            <td>Preview and record video from the selected camera, or front and rear cameras on supported devices.</td>
+            <td>Required</td>
+          </tr>
+          <tr>
+            <td>Microphone</td>
+            <td>Add audio to recordings when the user grants audio permission.</td>
+            <td>Optional</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>If microphone permission is denied, DuoCam can still try to record video without audio.</p>
+    </section>
+
+    <section>
+      <h2>3. Data DuoCam accesses</h2>
+      <p>DuoCam accesses camera input and, if allowed, microphone input to provide recording features selected by the user.</p>
+      <p>DuoCam does not automatically collect, upload, sell, or share:</p>
+      <ul>
+        <li>Videos.</li>
+        <li>Photos.</li>
+        <li>Audio recordings.</li>
+        <li>Camera frames.</li>
+        <li>Location.</li>
+        <li>Contacts.</li>
+        <li>Phone number.</li>
+        <li>Account credentials.</li>
+      </ul>
+      <p>This version does not include ads, analytics SDKs, crash reporting SDKs, third-party login SDKs, cloud sync, or in-app accounts.</p>
+    </section>
+
+    <section>
+      <h2>4. Local storage</h2>
+      <p>Recordings and exports are saved on your device through Android MediaStore, typically under:</p>
+      <pre><code>Movies/DuoCam</code></pre>
+      <p>Saved videos may be visible in your system gallery, file manager, or other media apps installed on your device.</p>
+    </section>
+
+    <section>
+      <h2>5. Sharing</h2>
+      <p>DuoCam only opens the Android share sheet after you choose to share a video. You choose the destination app. After that, the selected destination app handles the shared file according to its own privacy policy and settings.</p>
+    </section>
+
+    <section>
+      <h2>6. Feedback emails</h2>
+      <p>If you use the in-app feedback option, DuoCam opens your email app. The email may include your message and basic troubleshooting information such as device model, Android version, app version, and package name. Sending feedback is optional and happens only when you choose to send the email.</p>
+      <p>Feedback emails are used to respond to support requests, investigate issues, and improve the app. You can request deletion of feedback email content by contacting the privacy point of contact listed below.</p>
+    </section>
+
+    <section>
+      <h2>7. Data retention and deletion</h2>
+      <p>DuoCam does not run an account system and does not operate a cloud storage service for your videos.</p>
+      <p>Videos saved by DuoCam remain on your device until you delete them. You can delete recordings or exports inside DuoCam when available, or delete them using your system gallery, file manager, or device settings.</p>
+      <p>Feedback emails, if sent, may be retained as needed for support, troubleshooting, and record keeping, unless you request deletion where applicable.</p>
+    </section>
+
+    <section>
+      <h2>8. Security</h2>
+      <p>DuoCam keeps recording and export workflows local to your device in this version. The app uses Android runtime permissions for camera and microphone access. It does not automatically transmit your videos, photos, audio, or camera frames to a developer server.</p>
+      <p>When you choose to share files or send feedback through another app, that app is responsible for its own transmission and security practices.</p>
+    </section>
+
+    <section>
+      <h2>9. Children</h2>
+      <p>DuoCam is not directed to children and does not knowingly collect personal information from children.</p>
+    </section>
+
+    <section>
+      <h2>10. Third-party services</h2>
+      <p>This version of DuoCam does not include advertising SDKs, analytics SDKs, crash reporting SDKs, third-party login SDKs, or cloud sync SDKs.</p>
+      <p>If future versions add third-party services, this policy and the Google Play Data safety disclosures should be updated before release.</p>
+    </section>
+
+    <section>
+      <h2>11. Changes to this policy</h2>
+      <p>This policy may be updated when DuoCam changes its features, permissions, SDKs, or data practices. The effective date at the top of this page will be updated when changes are made.</p>
+    </section>
+
+    <section>
+      <h2>12. Contact</h2>
+      <p>Privacy inquiries: <a href="ringtone.sky@gmail.com">ringtone.sky@gmail.com</a></p>
+    </section>
+  </main>
+</body>
+</html>
