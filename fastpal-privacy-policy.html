@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FastPal Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1f2937;
+      --muted: #5f6673;
+      --line: #eadfce;
+      --paper: #fffaf3;
+      --panel: #ffffff;
+      --coral: #ef6f5e;
+      --mint: #43b883;
+      --sky: #4b9fe1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #fffaf3 0%, #eef7f5 100%);
+      line-height: 1.6;
+    }
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+    header {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow: 0 18px 42px rgba(31, 41, 55, 0.08);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 6vw, 48px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 36px 0 10px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 16px 22px; padding: 0; }
+    li { margin: 7px 0; }
+    a { color: #1672b9; }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--coral);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 13px;
+    }
+    .summary {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .pill {
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff7ec;
+    }
+    section {
+      margin-top: 22px;
+      padding: 26px 28px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    strong { color: #111827; }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">FastPal</p>
+      <h1>Privacy Policy</h1>
+      <p class="summary">
+        FastPal is a local-first intermittent fasting companion. This policy explains what data is stored on your device, what limited diagnostics are collected through Firebase, and how you can export or delete local data.
+      </p>
+      <div class="meta">
+        <span class="pill">Effective date: June 10, 2026</span>
+        <span class="pill">Contact: <a href="mailto:ringtone.sky@gmail.com">ringtone.sky@gmail.com</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>1. What FastPal Does</h2>
+      <p>
+        FastPal helps users track intermittent fasting windows, hydration, weight records, daily check-ins, reminders, achievements, and home screen widgets.
+      </p>
+      <p>
+        FastPal is for habit tracking and reminders only. It does not provide medical diagnosis, treatment advice, or guaranteed weight-loss results.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Data Stored Locally</h2>
+      <p>FastPal stores the following data on your device so the app can work:</p>
+      <ul>
+        <li>Fasting sessions, including start time, end time, plan, outcome, reason, and optional notes.</li>
+        <li>Hydration logs and water goal settings.</li>
+        <li>Weight entries, target weight, and target date settings.</li>
+        <li>Daily check-ins such as mood, hunger score, and subjective sleep score.</li>
+        <li>Onboarding choices, reminder preferences, widget theme settings, achievement progress, and Health Connect sync metadata.</li>
+      </ul>
+      <p>
+        In the current version, FastPal does not upload fasting, hydration, weight, or daily check-in records to FastPal servers.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Health Connect</h2>
+      <p>
+        FastPal may request read access to weight data from Health Connect. This access is optional and only happens after you grant permission.
+      </p>
+      <ul>
+        <li>FastPal reads weight records only to update local weight trends and daily task state.</li>
+        <li>FastPal does not write Health Connect data.</li>
+        <li>FastPal does not sell, transfer, or use Health Connect data for advertising, profiling, or medical diagnosis.</li>
+        <li>You can revoke FastPal's Health Connect permission at any time in Health Connect settings.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Firebase Analytics and Crashlytics</h2>
+      <p>
+        FastPal uses Firebase Analytics to understand basic app usage and high-level feature activity, and Firebase Crashlytics to diagnose crashes, non-fatal errors, and ANRs.
+      </p>
+      <p>
+        Custom Analytics events describe high-level actions only, such as starting or ending a fast, adding water, using widgets, exporting history, or Health Connect sync outcomes.
+      </p>
+      <p>
+        FastPal does not put weight values, hydration amounts, daily check-in scores, fasting notes, shield notes, or other free-text notes into Analytics event parameters.
+      </p>
+      <p>
+        Firebase SDKs may collect app interactions, diagnostic information, and Firebase installation or app instance identifiers. FastPal removes Android advertising ID and ads services permissions from the app manifest and does not use the advertising ID.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Export and Deletion</h2>
+      <ul>
+        <li>You can export local history as a CSV file from the app.</li>
+        <li>You can clear local fasting, hydration, weight, and check-in data from the app.</li>
+        <li>If you contact support about Firebase diagnostic data, use the email address below and include enough information for us to understand your request.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Backup and Device Transfer</h2>
+      <p>
+        FastPal excludes its local database and local preference files from Android cloud backup and device transfer rules. This helps keep fasting, hydration, weight, and check-in history local to your device unless you choose to export it.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Accounts, Ads, and Children</h2>
+      <ul>
+        <li>FastPal does not currently provide user accounts.</li>
+        <li>FastPal does not currently include advertising SDKs.</li>
+        <li>FastPal is not directed to children.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Changes to This Policy</h2>
+      <p>
+        We may update this policy when FastPal changes. If we add cloud sync, ads, accounts, a feedback form, or new health data access, we will update this policy and the Google Play data disclosures before release.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Contact</h2>
+      <p>
+        If you have questions or privacy requests, contact us at <a href="mailto:ringtone.sky@gmail.com">ringtone.sky@gmail.com</a>.
+      </p>
+    </section>
+
+    <footer>
+      This HTML file is prepared for publishing as the public FastPal privacy policy URL used in Google Play Console.
+    </footer>
+  </main>
+</body>
+</html>
