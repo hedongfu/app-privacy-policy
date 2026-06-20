@@ -87,52 +87,61 @@
   <main class="container">
     <article class="card">
       <h1>Privacy Policy for ToneFlux</h1>
-      <p class="meta"><strong>Last updated:</strong> May 1, 2026</p>
+      <p class="meta"><strong>Last updated:</strong> June 20, 2026</p>
 
       <p>
-        This Privacy Policy explains how ToneFlux (also referred to as MusicSpeed, package name
-        <strong>com.herman.toneflux</strong>) handles your information when you use the Android app.
+        This Privacy Policy explains how ToneFlux (package name
+        <strong>com.herman.toneflux</strong>) handles information when you use the Android app.
       </p>
 
       <h2>1. Information We Process</h2>
-      <p>The app is designed to work mainly with local audio files on your device.</p>
+      <p>The app is designed to work mainly with local audio files and recordings on your device.</p>
       <ul>
-        <li><strong>Local media metadata on your device:</strong> song title, album, artist, duration, and file URI needed to list and play your local audio.</li>
-        <li><strong>App settings and project data:</strong> playback settings (such as tempo, pitch, loop markers) and saved projects, stored locally on your device.</li>
-        <li><strong>Analytics data (if enabled):</strong> the app includes Firebase Analytics, which may process app usage and device/app information in aggregated form to help improve performance and features.</li>
+        <li><strong>Local audio metadata:</strong> song title, album, artist, duration, artwork reference, and file URI needed to list, search, play, edit, and export local audio.</li>
+        <li><strong>Imported folder access:</strong> if you choose an extra folder, the app stores the folder URI permission locally so it can show playable audio from that folder.</li>
+        <li><strong>Recordings:</strong> if you use the recording tool, microphone audio is recorded as an audio file on your device and saved to your Music library when you choose to save it.</li>
+        <li><strong>App settings and project data:</strong> playback settings such as tempo, pitch, loop markers, DSP settings, saved projects, custom playlists, hidden tracks, and practice history stored locally on your device.</li>
+        <li><strong>Analytics data:</strong> the app includes Firebase Analytics, which may process app usage, app interactions, device/app information, and app instance identifiers to help improve reliability and features.</li>
+        <li><strong>Crash and diagnostic data:</strong> the app includes Firebase Crashlytics, which may process crash reports, ANR reports, stack traces, app/device information, and related diagnostic events to help identify and fix stability issues.</li>
       </ul>
 
       <h2>2. Data We Do Not Collect</h2>
       <ul>
         <li>No account registration is required.</li>
-        <li>We do not collect your contacts, SMS, call logs, or precise location.</li>
+        <li>We do not upload your local music files or microphone recordings to a ToneFlux server.</li>
+        <li>We do not collect your contacts, SMS, call logs, calendar, financial information, or precise location.</li>
         <li>We do not sell your personal data.</li>
       </ul>
 
       <h2>3. Permissions We Request</h2>
       <ul>
         <li><strong>READ_MEDIA_AUDIO</strong> (Android 13+), or legacy storage read permission on older Android versions: used only to browse and play local audio files.</li>
+        <li><strong>RECORD_AUDIO</strong>: used only when you start the recording tool to capture microphone audio and save it as a local audio file.</li>
         <li><strong>POST_NOTIFICATIONS</strong> (Android 13+): used to show playback notifications and media controls.</li>
         <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK / WAKE_LOCK</strong>: used for stable background audio playback.</li>
       </ul>
 
       <h2>4. How Data Is Used</h2>
       <ul>
-        <li>To provide core features such as audio playback, speed/pitch control, loops, markers, and project restore.</li>
-        <li>To maintain app functionality and improve reliability.</li>
+        <li>To provide core features such as local audio playback, speed/pitch control, loops, markers, recording, export, and project restore.</li>
+        <li>To maintain app functionality, remember local preferences, and improve reliability.</li>
         <li>To analyze general product usage trends (via analytics) and improve user experience.</li>
+        <li>To diagnose crashes, ANRs, and stability issues (via crash reporting).</li>
       </ul>
 
       <h2>5. Data Sharing</h2>
       <p>
-        We do not share your local audio files with third parties. If analytics is active,
-        analytics-related data may be processed by Google Firebase according to Google's policies.
+        We do not share your local audio files or recordings with third parties unless you choose
+        to export or share them from your device. Analytics and crash reporting data may be processed
+        by Google Firebase as a service provider according to Google's policies and the Firebase
+        settings used by this app.
       </p>
 
       <h2>6. Data Retention and Deletion</h2>
       <ul>
-        <li>Local settings and project data remain on your device until you delete them or uninstall the app.</li>
-        <li>Analytics data retention is managed by Firebase/Google according to their platform rules.</li>
+        <li>Local settings, imported folder references, playback history, custom playlists, and project data remain on your device until you delete them, clear app data, or uninstall the app.</li>
+        <li>Exported audio and saved recordings are stored in your device's Music library and can be deleted from your device by you.</li>
+        <li>Analytics, crash, and diagnostic data retention is managed by Firebase/Google according to their platform rules.</li>
       </ul>
 
       <h2>7. Children</h2>
@@ -160,17 +169,12 @@
 
       <h2>11. Contact Us</h2>
       <p>
-        For privacy questions, contact: <strong>REPLACE_WITH_YOUR_CONTACT_EMAIL</strong>
+        For privacy questions, contact the developer using the contact email shown on the ToneFlux
+        Google Play store listing.
       </p>
 
-      <div class="note">
-        Important for Google Play submission: Publish this HTML page at a public HTTPS URL
-        (for example on GitHub Pages, Firebase Hosting, or your website domain), and put that exact URL
-        into the Privacy Policy field in Play Console.
-      </div>
-
       <p class="small">
-        Third-party service reference: Firebase Analytics by Google.
+        Third-party service reference: Firebase Analytics and Firebase Crashlytics by Google.
       </p>
     </article>
   </main>
