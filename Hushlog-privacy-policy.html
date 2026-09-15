@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HushLog privacy policy for local sleep-sound recording, Health Connect, storage, export, retention, and deletion.">
+  <meta name="theme-color" content="#092b2e">
+  <link rel="canonical" href="https://hushlog-privacy.rainy-dill-4301.chatgpt.site/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23092b2e'/%3E%3Cpath d='M39 12a21 21 0 1 0 12 35A18 18 0 1 1 39 12Z' fill='%23ffe8a7'/%3E%3Cpath d='M39 25v14M45 21v22M51 27v10' stroke='%236fd9d0' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <title>HushLog Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f4f8f7;
+      --surface: #ffffff;
+      --ink: #122022;
+      --muted: #536567;
+      --line: #cbd9d7;
+      --brand: #075f5b;
+      --brand-strong: #092b2e;
+      --accent: #b57a14;
+      --soft: #e4f1ef;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    a { color: var(--brand); text-underline-offset: 0.18em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+    .masthead {
+      background: var(--brand-strong);
+      color: #f6fffd;
+      border-bottom: 4px solid #6fd9d0;
+    }
+    .masthead-inner, main, footer {
+      width: min(100% - 2rem, 76rem);
+      margin-inline: auto;
+    }
+    .masthead-inner { padding: clamp(2rem, 5vw, 4.5rem) 0 clamp(1.8rem, 4vw, 3.4rem); }
+    .eyebrow {
+      margin: 0 0 0.4rem;
+      color: #9ce9e1;
+      font-size: 0.9rem;
+      font-weight: 750;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 { line-height: 1.2; text-wrap: balance; }
+    h1 { max-width: 16ch; margin: 0; font-size: clamp(2.25rem, 7vw, 4.7rem); letter-spacing: -0.04em; }
+    h2 { margin: 0 0 1rem; font-size: clamp(1.65rem, 3vw, 2.3rem); }
+    h3 { margin: 1.8rem 0 0.55rem; font-size: 1.15rem; }
+    .lede { max-width: 64ch; margin: 1rem 0 0; color: #d6e6e3; font-size: 1.08rem; }
+    .facts { display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 1.4rem 0 0; padding: 0; list-style: none; }
+    .facts li { padding: 0.35rem 0.75rem; border: 1px solid #4f7978; border-radius: 999px; color: #e8f6f4; }
+    .language-nav { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.6rem; }
+    .language-nav a {
+      display: inline-block;
+      min-height: 44px;
+      padding: 0.55rem 0.9rem;
+      border: 1px solid #74a8a4;
+      border-radius: 0.7rem;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    main { padding: clamp(1.4rem, 4vw, 3rem) 0 4rem; }
+    .language-block { scroll-margin-top: 1rem; }
+    .language-block + .language-block { margin-top: 2rem; }
+    .policy-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1rem; }
+    .card {
+      grid-column: span 6;
+      padding: clamp(1.15rem, 3vw, 1.8rem);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      box-shadow: 0 12px 32px rgb(4 40 40 / 0.06);
+    }
+    .card.wide { grid-column: 1 / -1; }
+    .card p:first-of-type { margin-top: 0; }
+    .card p:last-child, .card ul:last-child, .card dl:last-child { margin-bottom: 0; }
+    ul { padding-left: 1.35rem; }
+    li + li { margin-top: 0.45rem; }
+    .notice { border-left: 5px solid var(--brand); background: var(--soft); }
+    .contact { display: grid; grid-template-columns: minmax(8rem, 0.35fr) minmax(0, 1fr); gap: 0.45rem 1rem; }
+    .contact dt { font-weight: 750; }
+    .contact dd { margin: 0; overflow-wrap: anywhere; }
+    footer { padding: 0 0 3rem; color: var(--muted); font-size: 0.9rem; }
+    @media (max-width: 760px) {
+      .card { grid-column: 1 / -1; }
+      .contact { grid-template-columns: 1fr; }
+      .contact dd + dt { margin-top: 0.75rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #071517;
+        --surface: #0d2224;
+        --ink: #eef9f7;
+        --muted: #b3c8c5;
+        --line: #294244;
+        --brand: #72ddd4;
+        --soft: #123234;
+      }
+      .card { box-shadow: none; }
+    }
+    @media print {
+      :root { color-scheme: light; --page: #fff; --surface: #fff; --ink: #000; --muted: #333; --line: #aaa; }
+      .masthead { background: #fff; color: #000; border-bottom-color: #000; }
+      .eyebrow, .lede, .facts li, .language-nav a { color: #000; }
+      .language-nav { display: none; }
+      .card { break-inside: avoid; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <p class="eyebrow">HushLog · Privacy</p>
+      <h1>Privacy policy</h1>
+      <p class="lede">How HushLog accesses and protects sleep-sound, health, and journal data in the Free V1 app.</p>
+      <ul class="facts" aria-label="Policy summary">
+        <li>Local-first</li>
+        <li>No account</li>
+        <li>No ads</li>
+        <li>No automatic audio upload</li>
+      </ul>
+      <nav class="language-nav" aria-label="Policy languages">
+        <a href="#english">English</a>
+        <a href="#simplified-chinese" lang="zh-Hans">简体中文</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article id="english" class="language-block" aria-labelledby="english-title">
+      <h2 id="english-title">English</h2>
+      <div class="policy-grid">
+        <section class="card wide notice" aria-labelledby="en-overview">
+          <h3 id="en-overview">Overview</h3>
+          <p>Effective 2026-09-15. HushLog is provided by HushLog (“we”). HushLog is a local-first sleep-sound journal. It is not a medical device and does not diagnose, prevent, monitor, predict, treat, or cure any disease or condition.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-data">
+          <h3 id="en-data">Information HushLog accesses and stores</h3>
+          <p>When you start a recording, HushLog accesses your device microphone, stores audio in app-private storage, and processes the audio on the device to identify candidate sound moments.</p>
+          <p>The app may also store session times, event labels and corrections, notes, mood, factors, custom labels, favorites, recording context, body weight, neck measurement, and one respiratory-rate value you choose to save.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-collection">
+          <h3 id="en-collection">Collection, sharing, and third parties</h3>
+          <p>HushLog does not require an account and contains no advertising. It uses Google Analytics for Firebase to measure app launches, engagement, and feature usage, and Firebase Crashlytics to receive crash and stability reports. These services may send an app-installation identifier, app interaction events, an approximate geographic region derived from an IP address, app/version information, general device and operating-system information, crash traces, and related diagnostics to Google as our service provider.</p>
+          <p>We do not attach your name, email address, recordings, sound-event content, notes, factors, body measurements, Health Connect data, or exported files to Analytics or Crashlytics events. Advertising-ID collection and ad-personalization signals are disabled. HushLog does not automatically transmit recordings or night history to us, advertisers, or data brokers, and we do not sell personal or sensitive data.</p>
+          <p>If you deliberately export, share, or back up information, Android sends it only to the app, person, or storage destination you choose. That recipient’s privacy practices then apply.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-health">
+          <h3 id="en-health">Health Connect</h3>
+          <p>Health Connect access is optional and separately initiated by you. With permission, HushLog can write only a reviewed time-in-bed interval, read a nearby weight for review, or read one respiratory-rate sample within the reviewed interval.</p>
+          <p>HushLog does not send audio, events, names, notes, mood, factors, neck measurements, or recordings to Health Connect. It performs no automatic or background Health Connect synchronization.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-security">
+          <h3 id="en-security">Storage and security</h3>
+          <p>Audio is stored in app-private no-backup storage. Android automatic backup and device transfer can include only four non-history settings files: appearance, recording plan, storage retention, and time-in-bed target. Cloud backup additionally requires device encryption capability. Recordings, the event database, app-lock state, permission/disclosure state, alarms and reminders, playback state, diagnostics, and recording recovery state are not included. Manual history backups use AES-256-GCM authenticated encryption and a passphrase you choose.</p>
+          <p>An optional app lock can hide the interface, screenshots, and recent-app previews until your device screen lock is confirmed. It protects the interface; it does not mean every local file is individually encrypted. No storage method is completely secure, so protect your device and backup passphrase.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-retention">
+          <h3 id="en-retention">Retention and deletion</h3>
+          <p>You control audio-retention and storage-limit settings. HushLog can delete eligible old, unprotected audio while retaining a non-audio summary. You can delete one night’s audio, a whole night and summary, unprotected audio in bulk, the local activity log, or all HushLog local data.</p>
+          <p>Removing the app removes its app-private data under Android’s normal behavior. Exports and backups outside HushLog must be deleted from their destination by you. Health Connect records are managed in Health Connect. Analytics and Crashlytics data is retained according to the Firebase project settings and Google’s service terms; Crashlytics states that crash traces and associated identifiers are retained for 90 days before removal begins. You may contact us about a privacy request at the address below.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-permissions">
+          <h3 id="en-permissions">Permissions</h3>
+          <p>HushLog requests microphone access for user-started recording; notifications and foreground-service access for visible recording, playback, and alarm status; alarm/full-screen access for a wake alarm you configure; and optional Health Connect permissions for the actions above.</p>
+          <p>Permissions are requested in context and can be changed in Android settings. Refusing or revoking a permission can make its related feature unavailable or less reliable. Internet access is used for Analytics and Crashlytics reporting and, in a Pro build, Google Play Billing. It is never used to upload recordings or journal content automatically.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-children">
+          <h3 id="en-children">Children</h3>
+          <p>HushLog is intended for people aged 18 and older. It is not directed to children below that age. The Play Console target-audience selection must match this statement.</p>
+        </section>
+
+        <section class="card" aria-labelledby="en-contact">
+          <h3 id="en-contact">Changes and contact</h3>
+          <p>We may update this policy when HushLog’s behavior, SDKs, or applicable requirements change. The effective date above identifies the current version.</p>
+          <dl class="contact">
+            <dt>Developer</dt><dd>HushLog</dd>
+            <dt>Privacy contact</dt><dd><a href="mailto:ringtone.sky@gmail.com">ringtone.sky@gmail.com</a></dd>
+            
+            <dt>Policy URL</dt><dd><a href="https://hushlog-privacy.rainy-dill-4301.chatgpt.site/">https://hushlog-privacy.rainy-dill-4301.chatgpt.site/</a></dd>
+          </dl>
+        </section>
+      </div>
+    </article>
+
+    <article id="simplified-chinese" class="language-block" lang="zh-Hans" aria-labelledby="zh-title">
+      <h2 id="zh-title">简体中文</h2>
+      <div class="policy-grid">
+        <section class="card wide notice" aria-labelledby="zh-overview">
+          <h3 id="zh-overview">概述</h3>
+          <p>生效日期：2026-09-15。HushLog 由 HushLog（“我们”）提供。HushLog 是一款本地优先的睡眠声音记录工具，不是医疗设备，也不诊断、预防、监测、预测、治疗或治愈任何疾病或健康状况。</p>
+        </section>
+
+        <section class="card" aria-labelledby="zh-data">
+          <h3 id="zh-data">HushLog 访问和保存的信息</h3>
+          <p>当你主动开始录音时，HushLog 会访问设备麦克风，把音频保存在应用私有存储中，并在设备本机处理音频以识别候选声音时刻。</p>
+          <p>应用还可能保存会话时间、事件标签和纠正、备注、感受、因素、自定义名称、收藏、录音环境、体重、颈围，以及由你选择保存的一条呼吸率数值。</p>
+        </section>
+
+        <section class="card" aria-labelledby="zh-collection">
+          <h3 id="zh-collection">收集、共享和第三方</h3>
+          <p>HushLog 不要求注册账号，也不含广告。应用使用 Google Analytics for Firebase 统计启动、使用参与度与功能使用情况，并使用 Firebase Crashlytics 接收崩溃与稳定性报告。这些服务可能把应用安装标识符、应用交互事件、由 IP 地址推导的大致地理区域、应用/版本信息、通用设备与操作系统信息、崩溃堆栈及相关诊断数据发送给作为服务提供商的 Google。</p>
+          <p>我们不会在 Analytics 或 Crashlytics 事件中附加你的姓名、邮箱、录音、声音内容、备注、因素、身体测量、健康数据或导出文件。广告标识符收集和广告个性化信号已关闭。HushLog 不会自动把录音或夜间历史发送给我们、广告商或数据经纪商，我们也不出售个人或敏感数据。</p>
+          <p>只有当你明确选择导出、分享或备份时，Android 才会把信息发送到你选择的应用、人员或存储位置；之后适用该接收方的隐私做法。</p>
+        </section>
+
+        <section class="card" aria-labelledby="zh-health">
+          <h3 id="zh-health">健康数据共享</h3>
+          <p>健康数据共享完全可选，并由你分别发起。授权后，HushLog 只能写入一段经你复核的在床时间，读取附近的一条体重供你确认，或读取复核区间内的一条呼吸率样本。</p>
+          <p>HushLog 不会把音频、声音事件、姓名、备注、感受、因素、颈围或录音发送到健康数据共享服务，也不会自动或在后台同步健康数据。</p>
+        </section>
+
+        <section class="card" aria-labelledby="zh-security">
+          <h3 id="zh-security">存储与安全</h3>
+          <p>音频默认保存在应用私有且不参与备份的存储中。Android 自动备份和设备迁移只能包含四类非历史设置：外观、录音方案、存储保留策略和卧床时长目标；云备份还要求设备具备加密能力。录音、事件数据库、应用锁状态、权限/披露状态、闹钟与提醒、播放状态、诊断和录音恢复状态均不包含。手动历史备份采用 AES-256-GCM 认证加密和由你设置的口令。</p>
+          <p>可选应用锁能在设备锁屏凭据确认前隐藏界面、截图和最近任务预览。它保护界面，但不表示每个本地文件都单独加密。没有任何存储方式绝对安全，请保护设备和备份口令。</p>
+        </section>
+
+        <section class="card" aria-labelledby="zh-retention">
+          <h3 id="zh-retention">保留与删除</h3>
+          <p>你可以控制音频保留期和存储上限。HushLog 可以删除符合条件的旧且未保护音频，同时保留不含音频的摘要。你也可以删除单晚音频、整晚及摘要、批量未保护音频、本地活动日志或全部 HushLog 本地数据。</p>
+          <p>卸载应用会按 Android 的正常机制移除应用私有数据。导出或备份到 HushLog 外部的文件需要由你在目标位置删除；健康数据共享记录需要在相应系统服务中管理。Analytics 与 Crashlytics 数据按 Firebase 项目设置及 Google 服务条款保留；Crashlytics 说明，崩溃堆栈及相关标识符会保留 90 天，之后开始移除。你可通过下方邮箱提出隐私请求。</p>
+        </section>
+
+        <section class="card" aria-labelledby="zh-permissions">
+          <h3 id="zh-permissions">权限</h3>
+          <p>HushLog 为用户主动开始的录音申请麦克风权限；为可见的录音、播放和闹钟状态申请通知及前台服务权限；为你配置的唤醒闹钟申请闹钟和全屏显示权限；并为上述可选健康操作申请相应权限。</p>
+          <p>权限会在相关场景中申请，也可在 Android 设置中更改。拒绝或撤销权限可能使对应功能不可用或降低可靠性。互联网访问仅用于 Analytics、Crashlytics 报告，以及 Pro 版本中的 Google Play Billing；不会用于自动上传录音或日志内容。</p>
+        </section>
+
+        <section class="card" aria-labelledby="zh-children">
+          <h3 id="zh-children">儿童</h3>
+          <p>HushLog 面向 18 岁及以上用户，不以低于该年龄的儿童为目标。Play Console 中的目标受众选择必须与本说明一致。</p>
+        </section>
+
+        <section class="card" aria-labelledby="zh-contact">
+          <h3 id="zh-contact">更新与联系</h3>
+          <p>如果 HushLog 的行为、SDK 或适用要求发生变化，我们可能更新本政策。以上生效日期用于标识当前版本。</p>
+          <dl class="contact">
+            <dt>开发者</dt><dd>HushLog</dd>
+            <dt>隐私联系邮箱</dt><dd><a href="mailto:ringtone.sky@gmail.com">ringtone.sky@gmail.com</a></dd>
+            
+            <dt>政策网址</dt><dd><a href="https://hushlog-privacy.rainy-dill-4301.chatgpt.site/">https://hushlog-privacy.rainy-dill-4301.chatgpt.site/</a></dd>
+          </dl>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>HushLog Privacy Policy · 2026-09-15 · HushLog</p>
+  </footer>
+</body>
+</html>
+
